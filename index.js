@@ -4,6 +4,9 @@ const tracer = require('dd-trace').init({
     logger: {
         debug: console.log,
         error: console.error
+    },
+    experimental: {
+      thenables: true
     }
 })
 
